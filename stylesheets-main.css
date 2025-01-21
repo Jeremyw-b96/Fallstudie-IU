@@ -1,0 +1,234 @@
+body {
+    padding-top: 5rem;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    max-width: 48px;
+    max-height: 48px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+#website-hero-title {
+    padding-bottom: 4rem;
+}
+#intro {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.table-sortable th {
+    cursor:pointer;
+}
+.table-sortable .th-sort-asc::after {
+    content: "\25b4";
+}
+.table-sortable .th-sort-desc::after {
+    content: "\25be";
+}
+.table-sortable .th-sort-desc::after, 
+.table-sortable .th-sort-asc::after {
+    margin-left: 5px;
+}
+.container #local {
+    background-image: url("/data/heatmap.png");
+    background-size: 100%;
+    background-repeat: no-repeat;  
+}
+#table-search {
+    margin-bottom: 0.5rem;
+}
+#navbar-title {
+    font-size: x-large;
+}
+#localNav {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+#localNav a:hover {
+    color: gray;
+}
+#overview {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+#solutions {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+#solutions h2 {
+    margin-bottom:1.5rem;
+}
+#engagement {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+#opinions {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+} 
+.nav-link .material-icons {
+    margin-right: 8px;
+}
+
+#localNavItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.75rem;
+    margin-left: 1.75rem;  
+}
+.zweiter-paragraph {
+    text-align: right;
+}
+#solutions #quotation-marks {
+    size: relative;
+    background-repeat: no-repeat;  
+}
+@media screen and (max-width: 576px) {
+    #website-hero-title {
+        margin-top: 2rem;
+    }
+    #solutions .col-sm-2 {
+        display: none;
+    }
+    .zweiter-paragraph {
+        text-align: left;
+        margin:0.5rem;
+    }
+    .erster-paragraph {
+        margin:0.5rem;
+    }
+    .container #local {
+        background-color: #f8f9fa;
+        background-image: none;
+    }
+}
+#engagement h2 {
+    text-align: center;
+    margin-top:1rem;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+}
+#engagement button {
+    margin-top:2rem;
+    margin-bottom:1rem;
+}
+#engagement {
+    background-color: #f8f9fa;
+}
+@media screen and (max-width: 991px){
+    body {
+        padding-top: 2rem;
+    }
+    #website-hero-title {
+        padding-bottom: 1rem;
+    }
+    #intro .row {
+        display: flex;
+        flex-direction: column;
+    }
+    #localNavItem {
+        display: flex;
+        align-items: left;
+        justify-content: left;
+        margin-right: 1rem;
+        margin-left: 1rem;  
+    }
+    #opinions .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-top: 2px solid #f8f9fa;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    #opinions .col-sm-4, 
+    #opinions .col-md-8 {
+        width: 100%;
+        padding: 0;
+    }
+
+    #opinions .row:first-child {
+        border-top: none;
+    }
+
+    #opinions .row:last-child {
+        border-bottom: none;
+    }
+
+    #opinions picture.person {
+        margin: 1rem auto;
+        max-width: 150px;
+    }
+
+    #opinions img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #opinions figure {
+        margin: 1rem auto;
+    }
+
+    #opinions .blockquote {
+        text-align: center;
+    }
+    #opinions .blockquote-footer {
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+    .table-responsive {
+        max-height: 50vh;
+        overflow-y: auto; 
+    }
+    
+    #co2-data {
+        width: 100%;
+        border-collapse: collapse;
+    }
+}
+@media screen and (min-width: 991px) {
+    #opinions {
+        padding-right: 9rem;
+        padding-left: 9rem;
+        
+    }
+    #blockquote1 {
+        padding-left: 1.5rem;
+    }
+    #blockquote2 {
+        padding-right: 1.5rem;
+    }
+    #blockquote3 {
+        padding-left: 1.5rem;
+    }
+    .table-responsive {
+        width: 60%;
+        max-height: 50vh;
+        overflow-y: auto; 
+    }
+    #co2-data {
+        width: 100%;
+        border-collapse: collapse;
+    }
+}
+#opinions img {
+    max-width: 250px;
+}
+
+#opinions .blockquote-footer {
+    font-size: 1rem;
+}
+#footer-group {
+    margin-bottom:1.5rem;
+}
+footer {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}

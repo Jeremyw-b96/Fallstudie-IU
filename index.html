@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Initiative Klimawandel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets-main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="light">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="/">
+                        <img src="data/firmenlogo.svg" alt="Logo" class="img-fluid logo">
+                        Initiative Klimawandel
+                    </a>
+                    <a class="navbar-brand"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Themen&Projekte
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="kampagne.html">Erneuerbare Energien fördern</a></li>
+                                <li><a class="dropdown-item" href="bildung.html">Klimabildung und Bewusstsein</a></li>
+                                <li><a class="dropdown-item" href="projekte.html">Urbanes Gärtnern und Aufforstung</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="background.html">Über uns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Kontakt</a>
+                        </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                        <input class="form-control form-control-sm ms-2 w-75" type="search" placeholder="Suche" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><span class="material-icons">search</search></span></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container" id="intro">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-2" id="website-hero-title">Der Klimawandel betrifft uns alle.</h1>
+                    <h3>Unsere Mission:<small class="text-body-secondary"> Transparente Einblicke in weltweite CO2-Emissionen schaffen. 
+                    Gemeinsam können wir durch Wissen, Engagement und Verantwortung handeln.</small></h3> 
+                </div>
+                <div class="col">
+                    <picture>
+                        <img src="data/climate-change.jpg" class="img-fluid" alt="hero-image-climate-change">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="local">
+                <div class="container my-4">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="#" id="navbar-title">Inhalte</a>
+                            <div class="navbar-collapse" id="localNav">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item" id="localNavItem">
+                                        <span class="material-icons">assessment</span><a class="nav-link active" aria-current="page" href="#overview" id="n2">Datenübersicht</a>
+                                    </li>
+                                    <li class="nav-item" id="localNavItem">
+                                        <span class="material-icons">eco</span><a class="nav-link active" aria-current="page" href="#solutions" id="n2">Maßnahmen</a>
+                                    </li>
+                                    <li class="nav-item" id="localNavItem">
+                                        <span class="material-icons">volunteer_activism</span><a class="nav-link active" aria-current="page" href="#engagement" id="n2">Mitmachen</a>
+                                    </li>
+                                    <li class="nav-item" id="localNavItem">
+                                        <span class="material-icons">person</span><a class="nav-link active" aria-current="page" href="#opinions" id="n2">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <section id="overview">
+                    <h2>CO2-Emissionsdaten</h2>
+                    <p>Die größten Verschmutzer im privaten Sektor (2022)</p>
+                    <div class="row" id="table-search">
+                        <div class="col-sm-4">
+                            <input class="form-control" type="text" id="search" placeholder="Suche..." />
+                        </div>
+                    </div>
+                    <div class="dropdown mb-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-company" data-bs-toggle="dropdown" aria-expanded="false">
+                        Unternehmen auswählen
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-company" id="company-filter">
+                        <li><a class="dropdown-item" data-value="">Alle Unternehmen</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown mb-3">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-country" data-bs-toggle="dropdown" aria-expanded="false">
+                        Land auswählen
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown-country" id="country-filter">
+                        <li><a class="dropdown-item" data-value="">Alle Länder</a></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <div class="table-responsive">
+                            <table id="co2-data" class="table table-striped-columns table-hover table-sm table-bordered table-sortable">
+                                <caption>Weinstein, K. (o. D.). PERI - Greenhouse 100 Polluters Index. https://peri.umass.edu/greenhouse-100-polluters-index-current</caption>
+                                <thead>
+                                  <tr class="table-dark">
+                                    <th scope="col">#</th>
+                                    <th scope="col">Unternehmen</th>
+                                    <th scope="col">Land</th>
+                                    <th scope="col">Emissionen (in Tonnen)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Vistra Energy</td>
+                                    <td>USA</td>
+                                    <td>95,566,909</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Southern Company</td>
+                                    <td>USA</td>
+                                    <td>83,835,195</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Duke Energy</td>
+                                    <td>USA</td>
+                                    <td>79,341,703</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>Berkshire Hathaway</td>
+                                    <td>USA</td>
+                                    <td>65,729,597</td>
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>American Electric Power</td>
+                                    <td>USA</td>
+                                    <td>56,654,801</td>
+                                  </tr>
+                                  <tr>
+                                    <td>6</td>
+                                    <td>Energy Capital Partners</td>
+                                    <td>USA</td>
+                                    <td>44,840,877</td>
+                                  </tr>
+                                  <tr>
+                                    <td>7</td>
+                                    <td>U.S. Government</td>
+                                    <td>USA</td>
+                                    <td>44,715,319</td>
+                                  </tr>
+                                  <tr>
+                                    <td>8</td>
+                                    <td>Exxon Mobil</td>
+                                    <td>USA</td>
+                                    <td>42,053,511</td>
+                                  </tr>
+                                  <tr>
+                                    <td>9</td>
+                                    <td>Xcel Energy</td>
+                                    <td>USA</td>
+                                    <td>41,149,270</td>
+                                  </tr>
+                                  <tr>
+                                    <td>10</td>
+                                    <td>Entergy</td>
+                                    <td>USA</td>
+                                    <td>39,946,450</td>
+                                  </tr>
+                                  <tr>
+                                    <td>11</td>
+                                    <td>NextEra Energy</td>
+                                    <td>USA</td>
+                                    <td>39,457,219</td>
+                                  </tr>
+                                  <tr>
+                                    <td>12</td>
+                                    <td>Dominion Energy</td>
+                                    <td>USA</td>
+                                    <td>32,973,389</td>
+                                  </tr>
+                                  <tr>
+                                    <td>13</td>
+                                    <td>NRG Energy</td>
+                                    <td>USA</td>
+                                    <td>32,457,342</td>
+                                  </tr>
+                                  <tr>
+                                    <td>14</td>
+                                    <td>Phillips 66</td>
+                                    <td>USA</td>
+                                    <td>30,229,597</td>
+                                  </tr>
+                                  <tr>
+                                    <td>15</td>
+                                    <td>PPL Corp.</td>
+                                    <td>USA</td>
+                                    <td>28,907,124</td>
+                                  </tr>
+                                  <tr>
+                                    <td>16</td>
+                                    <td>Saudi Aramco</td>
+                                    <td>Saudi-Arabien</td>
+                                    <td>134,021,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>17</td>
+                                    <td>Gazprom</td>
+                                    <td>Russland</td>
+                                    <td>130,842,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>18</td>
+                                    <td>PetroChina</td>
+                                    <td>China</td>
+                                    <td>118,456,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>19</td>
+                                    <td>Royal Dutch Shell</td>
+                                    <td>Niederlande</td>
+                                    <td>112,987,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>20</td>
+                                    <td>BP</td>
+                                    <td>Vereinigtes Königreich</td>
+                                    <td>111,234,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>21</td>
+                                    <td>TotalEnergies</td>
+                                    <td>Frankreich</td>
+                                    <td>103,452,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>22</td>
+                                    <td>Eni</td>
+                                    <td>Italien</td>
+                                    <td>98,234,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>23</td>
+                                    <td>Rosneft</td>
+                                    <td>Russland</td>
+                                    <td>96,345,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>24</td>
+                                    <td>Coal India</td>
+                                    <td>Indien</td>
+                                    <td>83,291,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>25</td>
+                                    <td>Petrobras</td>
+                                    <td>Brasilien</td>
+                                    <td>81,235,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>26</td>
+                                    <td>Repsol</td>
+                                    <td>Spanien</td>
+                                    <td>78,422,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>27</td>
+                                    <td>Woodside Energy</td>
+                                    <td>Australien</td>
+                                    <td>76,543,000</td>
+                                  </tr>
+                                  <tr>
+                                    <td>28</td>
+                                    <td>Equinor</td>
+                                    <td>Norwegen</td>
+                                    <td>74,321,000</td>
+                                  </tr>
+                                </tbody>
+                              </table>                              
+                        </div>
+                    </div>
+                </section>
+                <section id="solutions">
+                    <div class="row" id="#quotation-marks">
+                        <h2>Maßnahmen für mehr Verantwortung</h2>
+                        <div class="col-sm-2">
+                            <picture>
+                                <img src="data/quotation-marks-first.png" class="img-fluid" alt="quotation-marks-first">
+                            </picture>
+                        </div>
+                        <div class="col-sm-10">
+                        <div class="erster-paragraph">
+                            <p>Die Verantwortung der Staaten ist zentral für den Übergang zur Klimaneutralität. 
+                            Regierungen müssen <em>klare Klimaziele definieren</em> und durch internationale Abkommen und nationale Strategien umsetzen. 
+                            Dazu gehören strenge Emissionsstandards, Subventionen für erneuerbare Energien und die Förderung klimarelevanter Technologien. 
+                            Eine effektive CO2-Bepreisung ist entscheidend, um klimafreundliche Innovationen zu fördern. 
+                            Staatliche Regulierung mobilisiert den privaten Sektor und sichert globale Klimaziele.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <div class="zweiter-paragraph">
+                                <p>Unternehmen tragen Verantwortung für die Emissionsminderung durch klimafreundliche Technologien, Kreislaufwirtschaft und die Dekarbonisierung von Lieferketten. 
+                                Regulierungen wie CO2-Bepreisung und Berichtspflichten fördern nachhaltiges Wirtschaften. 
+                                Die <em>Einhaltung von Standards und transparente Kommunikation</em> stärken Wettbewerbsfähigkeit und unterstützen die globale Klimawende.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <picture>
+                                <img src="data/quotation-marks-second.png" class="img-fluid" alt="quotation-marks-second">
+                            </picture>
+                        </div>
+                    </div>
+                </section>
+                <section id="engagement">
+                    <h2>Du möchtest dich für den Schutz des Klimas engagieren, dann kontaktiere uns und werde Teil unseres internationalen Teams!</h2>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                        <button type="button" class="btn btn-success btn-lg" href="contact.html">Kontakt</button>
+                    </div>
+                </section>
+                <section id="opinions">
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <picture class="person">
+                                <img src="data/testimonial1.png" class="img-fluid" alt="person1">
+                            </picture>
+                        </div>
+                        <div class="col-md-8">
+                            <figure class="text-end" id="blockquote1">
+                                <blockquote class="blockquote">
+                                <p class="mb-0">Meine Zeit bei dieser Organisation war prägend. Das Engagement für den Klimaschutz hat mich tief beeindruckt. 
+                                    Es war eine bereichernde Erfahrung, Teil eines so leidenschaftlichen Teams zu sein.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Maximilian Weber, <cite title="Source Title"> ehemaliger Projektmanager</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <figure class="blockquote" id="blockquote2">
+                                <blockquote class="blockquote">
+                                  <p class="mb-0">Die Partnerschaft mit dieser Non-Profit-Organisation hat uns geholfen, unsere Klimaziele effektiv umzusetzen. 
+                                    Ihre Expertise und Unterstützung waren entscheidend, um innovative, CO2-reduzierende Lösungen zu entwickeln.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Sandra Müller, <cite title="Source Title">Leiterin Nachhaltigkeit, EcoTech Solutions GmbH</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-4">
+                            <picture class="person">
+                                <img src="data/testimonial2.png" class="img-fluid" alt="person2">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-4">
+                            <picture class="person">
+                                <img src="data/testimonial3.png" class="img-fluid rounded" alt="person3">
+                            </picture>
+                        </div>
+                        <div class="col-md-8">
+                            <figure class="text-end" id="blockquote3">
+                                <blockquote class="blockquote">
+                                <p class="mb-0">Mit dieser Organisation haben wir entscheidende Impulse für den Klimaschutz gesetzt. 
+                                    Ihre Expertise und ihr Netzwerk haben unsere gemeinsamen Projekte auf internationaler Ebene vorangebracht.</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    Dr. Lena Hoffmann, <cite title="Source Title"> Project GreenFuture</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div> 
+                </section>   
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-md-4" id="footer-group">
+                <h5>Impressum</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="/impressum">Impressum anzeigen</a></li>
+                  <li class="list-group-item"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="/datenschutz">Datenschutz</a></li>
+                  <li class="list-group-item"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="/agb">Allgemeine Geschäftsbedingungen</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4" id="footer-group">
+                    <h5>Urheberrecht</h5>
+                    <p>© 2024 [Initiative Klimawandel]. Alle Rechte vorbehalten.</p>
+              </div>
+              <div class="col-md-4" id="footer-group">
+                    <h5>Kontakt</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="mailto:info@initiative-klimawandel.com">info@initiative-klimawandel.com</a></li>
+                        <li class="list-group-item"><a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="tel:+491234567890">+49 123 456 7890</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-12">
+                <p class="text-center">
+                  Alle Inhalte dieser Website dienen ausschließlich Informationszwecken. Wir übernehmen keine Haftung für die Richtigkeit, Vollständigkeit und Aktualität der bereitgestellten Inhalte.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="dynamic-table.js"></script>
+    <script src="rtl-languages.js"></script>
+</body>
