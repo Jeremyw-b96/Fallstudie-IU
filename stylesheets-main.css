@@ -119,7 +119,7 @@ body {
 #engagement {
     background-color: #f8f9fa;
 }
-@media screen and (max-width: 991px){
+@media screen and (max-width: 992px){
     body {
         padding-top: 2rem;
     }
@@ -193,7 +193,7 @@ body {
         border-collapse: collapse;
     }
 }
-@media screen and (min-width: 991px) {
+@media screen and (min-width: 992px) {
     #opinions {
         padding-right: 9rem;
         padding-left: 9rem;
