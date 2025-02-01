@@ -1,3 +1,5 @@
+// Ausrichtung nach Sprachkultur
+
 const rtlLanguages = ['ar', 'he', 'fa', 'ur'];
 
 const lang = document.documentElement.lang;

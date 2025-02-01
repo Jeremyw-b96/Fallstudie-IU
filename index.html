@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <title>Initiative Klimawandel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -102,18 +102,59 @@
                     </div>
                     <div class="dropdown mb-3">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-company" data-bs-toggle="dropdown" aria-expanded="false">
-                        Unternehmen auswählen
+                            Unternehmen auswählen
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdown-company" id="company-filter">
-                        <li><a class="dropdown-item" data-value="">Alle Unternehmen</a></li>
+                            <li><a class="dropdown-item" data-value="">Alle Unternehmen</a></li>
+                            <li><a class="dropdown-item" data-value="Vistra Energy">Vistra Energy</a></li>
+                            <li><a class="dropdown-item" data-value="Southern Company">Southern Company</a></li>
+                            <li><a class="dropdown-item" data-value="Duke Energy">Duke Energy</a></li>
+                            <li><a class="dropdown-item" data-value="Berkshire Hathaway">Berkshire Hathaway</a></li>
+                            <li><a class="dropdown-item" data-value="American Electric Power">American Electric Power</a></li>
+                            <li><a class="dropdown-item" data-value="Energy Capital Partners">Energy Capital Partners</a></li>
+                            <li><a class="dropdown-item" data-value="U.S. Government">U.S. Government</a></li>
+                            <li><a class="dropdown-item" data-value="Exxon Mobil">Exxon Mobil</a></li>
+                            <li><a class="dropdown-item" data-value="Xcel Energy">Xcel Energy</a></li>
+                            <li><a class="dropdown-item" data-value="Entergy">Entergy</a></li>
+                            <li><a class="dropdown-item" data-value="NextEra Energy">NextEra Energy</a></li>
+                            <li><a class="dropdown-item" data-value="Dominion Energy">Dominion Energy</a></li>
+                            <li><a class="dropdown-item" data-value="NRG Energy">NRG Energy</a></li>
+                            <li><a class="dropdown-item" data-value="Phillips 66">Phillips 66</a></li>
+                            <li><a class="dropdown-item" data-value="PPL Corp.">PPL Corp.</a></li>
+                            <li><a class="dropdown-item" data-value="Saudi Aramco">Saudi Aramco</a></li>
+                            <li><a class="dropdown-item" data-value="Gazprom">Gazprom</a></li>
+                            <li><a class="dropdown-item" data-value="PetroChina">PetroChina</a></li>
+                            <li><a class="dropdown-item" data-value="Royal Dutch Shell">Royal Dutch Shell</a></li>
+                            <li><a class="dropdown-item" data-value="BP">BP</a></li>
+                            <li><a class="dropdown-item" data-value="TotalEnergies">TotalEnergies</a></li>
+                            <li><a class="dropdown-item" data-value="Eni">Eni</a></li>
+                            <li><a class="dropdown-item" data-value="Rosneft">Rosneft</a></li>
+                            <li><a class="dropdown-item" data-value="Coal India">Coal India</a></li>
+                            <li><a class="dropdown-item" data-value="Petrobras">Petrobras</a></li>
+                            <li><a class="dropdown-item" data-value="Repsol">Repsol</a></li>
+                            <li><a class="dropdown-item" data-value="Woodside Energy">Woodside Energy</a></li>
+                            <li><a class="dropdown-item" data-value="Equinor">Equinor</a></li>
                         </ul>
                     </div>
                     <div class="dropdown mb-3">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-country" data-bs-toggle="dropdown" aria-expanded="false">
-                        Land auswählen
+                            Land auswählen
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdown-country" id="country-filter">
-                        <li><a class="dropdown-item" data-value="">Alle Länder</a></li>
+                            <li><a class="dropdown-item" data-value="">Alle Länder</a></li>
+                            <li><a class="dropdown-item" data-value="USA">USA</a></li>
+                            <li><a class="dropdown-item" data-value="Saudi-Arabien">Saudi-Arabien</a></li>
+                            <li><a class="dropdown-item" data-value="Russland">Russland</a></li>
+                            <li><a class="dropdown-item" data-value="China">China</a></li>
+                            <li><a class="dropdown-item" data-value="Niederlande">Niederlande</a></li>
+                            <li><a class="dropdown-item" data-value="Vereinigtes Königreich">Vereinigtes Königreich</a></li>
+                            <li><a class="dropdown-item" data-value="Frankreich">Frankreich</a></li>
+                            <li><a class="dropdown-item" data-value="Italien">Italien</a></li>
+                            <li><a class="dropdown-item" data-value="Indien">Indien</a></li>
+                            <li><a class="dropdown-item" data-value="Brasilien">Brasilien</a></li>
+                            <li><a class="dropdown-item" data-value="Spanien">Spanien</a></li>
+                            <li><a class="dropdown-item" data-value="Australien">Australien</a></li>
+                            <li><a class="dropdown-item" data-value="Norwegen">Norwegen</a></li>
                         </ul>
                     </div>
                     <div class="row">
@@ -123,9 +164,9 @@
                                 <thead>
                                   <tr class="table-dark">
                                     <th scope="col">#</th>
-                                    <th scope="col">Unternehmen</th>
-                                    <th scope="col">Land</th>
-                                    <th scope="col">Emissionen (in Tonnen)</th>
+                                    <th scope="col" id="company">Unternehmen</th>
+                                    <th scope="col" id="country">Land</th>
+                                    <th scope="col" id="emissions">Emissionen (in Tonnen)</th>
                                   </tr>
                                 </thead>
                                 <tbody>
@@ -436,6 +477,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
-    <script src="dynamic-table.js"></script>
     <script src="rtl-languages.js"></script>
+    <script src="sort-table.js"></script>
+    <script src="filter-table.js"></script>
 </body>
